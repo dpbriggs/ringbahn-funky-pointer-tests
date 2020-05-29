@@ -10,6 +10,8 @@ async fn do_stuff_async(port: usize) {
     file.write_all(b"hello, world!").await.unwrap();
 }
 
+// This isn't necessary, but it seems to help the issue reproduce more frequently.
+// If this is distracting, please change do_async_work in main() to be do_stuff_async()
 async fn more_async_work(port: usize) {
     timeout(Duration::from_millis(1), do_stuff_async(port))
         .await

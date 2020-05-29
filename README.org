@@ -1,0 +1,10 @@
+* Reduced Test Case
+  
+  #+begin_src bash
+➜  ringbahn-funky-pointer-tests git:(master) cargo run
+    Finished dev [unoptimized + debuginfo] target(s) in 0.08s
+     Running `target/debug/ringbahn-funky-pointer-tests`
+free(): invalid pointer
+  #+end_src
+  
+  https://github.com/withoutboats/ringbahn/issues/21

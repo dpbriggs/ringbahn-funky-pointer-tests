@@ -1,0 +1,16 @@
+[package]
+name = "ringbahn-funky-pointer-tests"
+version = "0.1.0"
+authors = ["David Briggs <david@dpbriggs.ca>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ringbahn = "0.0.0-experimental.1"
+async-std = "1.6.0"
+futures = "0.3.5"
+futures-util = "0.3.5"
+tokio = { version = "0.2", features = ["full"] }
+
+tokio-util = { version = "0.3.1", features = ["codec", "compat"] }
